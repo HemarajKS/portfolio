@@ -1,0 +1,79 @@
+@import "../../assets/scss/main";
+.contactContainer {
+  .contact {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .title {
+      font-size: 3rem;
+      line-height: 6rem;
+      span {
+        color: $greyText;
+        font-family: "Roboto Thin";
+      }
+    }
+    .body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      .top {
+        display: flex;
+        gap: 16px;
+        font-size: 2rem;
+
+        a {
+          text-decoration: none;
+          color: $purple;
+        }
+      }
+
+      .bottom {
+        .form {
+          display: flex;
+          align-items: center;
+        }
+        .form-group {
+          margin-bottom: 20px;
+          .error-message {
+            color: $red;
+          }
+          label {
+            font-size: 24px;
+            margin-right: 20px;
+            color: $greyText;
+            font-family: "Roboto Thin";
+          }
+          input,
+          textarea {
+            padding: 8px 4px;
+            font-size: 24px;
+            background-color: unset;
+            border: none;
+            border-bottom: 0.5px solid $greyText;
+            color: $white;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+  button {
+    padding: 5px 10px;
+    float: right;
+    font-family: "Roboto Regular";
+    font-size: 18px;
+    color: $white;
+    background-color: $purple;
+    border-radius: 4px;
+    letter-spacing: 1px;
+
+    &:disabled {
+      opacity: 0.3;
+      cursor: no-drop;
+    }
+  }
+}
