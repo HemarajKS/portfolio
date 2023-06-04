@@ -1,11 +1,12 @@
 <div class="navbar">
-  <div class="logo">Logo</div>
+  <div class="logo" (click)="navigateToRoute('/')">HKS</div>
   <div class="menu">
     <ul>
       <li *ngFor="let menuItem of menuItems">
-        <a [routerLink]="menuItem.route">
-          <i [class]="menuItem.icon"></i>
+        <a [routerLink]="menuItem.route" routerLinkActive="active">
+          <span class="menuIcon"><i [class]="menuItem.icon"></i></span>
           {{ menuItem.label }}
+          <span class="underline"></span>
         </a>
       </li>
     </ul>

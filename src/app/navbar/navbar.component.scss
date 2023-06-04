@@ -1,6 +1,15 @@
+@import "../../assets/scss/main";
+
 .navbar {
   display: flex;
   justify-content: space-between;
+  padding: 2rem 0;
+  .logo {
+    font-family: "Roboto Bold";
+    color: $purple;
+    font-size: 32px;
+    cursor: pointer;
+  }
 
   .menu {
     ul,
@@ -14,10 +23,38 @@
     a {
       text-decoration: none;
       color: inherit;
+      .menuIcon {
+        @media screen and (min-width: $tablet) {
+          display: none;
+        }
+      }
+    }
+    .underline {
+      display: none;
+    }
+    .active {
+      color: $purple;
+      font-weight: bold;
+      position: relative;
+      & > .underline {
+        display: block;
+        position: absolute;
+        background-color: $white;
+        width: 14px;
+        height: 4px;
+        margin-top: 8px;
+        border-radius: 2px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
 
     ul {
       gap: 40px;
+      font-size: 18px;
+      li {
+        gap: 18px;
+      }
     }
   }
 }
