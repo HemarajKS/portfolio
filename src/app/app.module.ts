@@ -8,9 +8,10 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { WorkComponent } from './work/work.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HomeComponent, AboutComponent, ContactComponent, WorkComponent],
+  declarations: [AppComponent, NavbarComponent, HomeComponent, AboutComponent, ContactComponent, WorkComponent, NotFoundComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
