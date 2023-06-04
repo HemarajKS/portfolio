@@ -1,0 +1,74 @@
+@import "../../assets/scss/main";
+
+.workContainer {
+  .work {
+    min-height: 100vh;
+    .title {
+      font-size: 2rem;
+      span {
+        font-family: "Roboto Thin";
+        line-height: 6rem;
+        color: $greyText;
+      }
+    }
+    .body {
+      max-width: 1200px;
+      margin: 0 auto;
+      .container {
+        display: flex;
+        align-items: flex-end;
+        flex: 1;
+        gap: 40px;
+        justify-content: center;
+
+        img {
+          height: 300px;
+          width: 300px;
+          border-radius: 22px;
+        }
+        .right {
+          flex-basis: 50%;
+          .projectName {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            line-height: 3.5rem;
+          }
+          .projectDescription {
+            font-family: "Roboto Thin";
+            font-size: 1.5rem;
+            color: $greyText;
+            span {
+              color: $white;
+              font-family: "Roboto Regular";
+            }
+          }
+          .projectType {
+            font-family: "Roboto Light";
+            line-height: 3.5rem;
+            color: $greyText;
+            font-size: 0.9rem;
+          }
+
+          a {
+            background-color: transparent;
+            border: 1.5px solid $greyText;
+            font-size: 1rem;
+            padding: 6px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: $greyText;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+
+            &:hover {
+              background-color: $purple;
+              border: 1.5px solid $white;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
