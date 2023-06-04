@@ -20,6 +20,7 @@
         flex: 1;
         gap: 40px;
         justify-content: center;
+        margin-bottom: 60px;
 
         img {
           height: 300px;
@@ -38,7 +39,7 @@
             font-family: "Roboto Thin";
             font-size: 1.5rem;
             color: $greyText;
-            span {
+            & > .span {
               color: $white;
               font-family: "Roboto Regular";
             }
@@ -68,6 +69,10 @@
             }
           }
         }
+      }
+
+      .odd {
+        flex-direction: row-reverse;
       }
     }
   }

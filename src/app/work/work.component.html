@@ -2,20 +2,20 @@
   <div class="work">
     <div class="title"><span>Selected</span> Works</div>
     <div class="body">
-      <div class="container">
-        <img src="../../assets/images/2.jpg" alt="Image" />
+      <div
+        *ngFor="let workItem of workItems; let i = index"
+        class="container"
+        [ngClass]="{ even: i % 2 === 0, odd: i % 2 !== 0 }"
+      >
+        <img [src]="workItem.image" alt="Image" />
         <div class="right">
-          <div class="projectName">Project Name</div>
-          <div class="projectDescription">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.<span>
-              Iste omnis distinctio quisquam </span
-            >odio unde excepturi est, nemo quaerat molestiae<span>
-              Modi adipisci quod rerum aut
-            </span>
-            tempore dolorem voluptatibus.
-          </div>
-          <div class="projectType">Web App</div>
-          <a href="https://www.example.com" target="_blank"
+          <div class="projectName">{{ workItem.name }}</div>
+          <div
+            class="projectDescription"
+            [innerHTML]="workItem.description"
+          ></div>
+          <div class="projectType">{{ workItem.type }}</div>
+          <a [href]="workItem.link" target="_blank"
             >View Work <i class="fa-solid fa-arrow-right"></i
           ></a>
         </div>
