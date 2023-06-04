@@ -8,22 +8,22 @@ export class MenuService {
   private menuItems: MenuItem[] = [
     {
       label: 'Home',
-      icon: 'home',
+      icon: 'fa-solid fa-house',
       route: '/home',
     },
     {
       label: 'About',
-      icon: 'info',
+      icon: 'fa-solid fa-circle-info',
       route: '/about',
     },
     {
       label: 'Works',
-      icon: 'works',
+      icon: 'fa-solid fa-list-check',
       route: '/works',
     },
     {
       label: 'Contact',
-      icon: 'email',
+      icon: 'fa-solid fa-address-book',
       route: '/contact',
     },
   ];

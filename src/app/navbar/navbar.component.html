@@ -4,7 +4,7 @@
     <ul>
       <li *ngFor="let menuItem of menuItems">
         <a [routerLink]="menuItem.route">
-          <span class="icon">{{ menuItem.icon }}</span>
+          <i [class]="menuItem.icon"></i>
           {{ menuItem.label }}
         </a>
       </li>

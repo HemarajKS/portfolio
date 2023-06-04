@@ -11,7 +11,15 @@ import { WorkComponent } from './work/work.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HomeComponent, AboutComponent, ContactComponent, WorkComponent, NotFoundComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    WorkComponent,
+    NotFoundComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
