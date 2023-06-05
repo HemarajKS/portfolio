@@ -2,7 +2,7 @@
 
 .workContainer {
   .work {
-    min-height: 100vh;
+    min-height: calc(100vh - 102.4px);
     .title {
       font-size: 2rem;
       span {
