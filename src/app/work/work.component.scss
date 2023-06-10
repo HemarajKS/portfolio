@@ -1,6 +1,10 @@
 @import "../../assets/scss/main";
 
 .workContainer {
+  animation-name: slideAnimation;
+  animation-duration: 0.8s;
+  // animation-iteration-count: infinite;
+  animation-timing-function: linear;
   .work {
     min-height: calc(100vh - 102.4px);
     .title {
@@ -75,5 +79,20 @@
         flex-direction: row-reverse;
       }
     }
+  }
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
   }
 }
