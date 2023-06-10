@@ -5,7 +5,7 @@
       <li *ngFor="let menuItem of menuItems">
         <a [routerLink]="menuItem.route" routerLinkActive="active">
           <span class="menuIcon"><i [class]="menuItem.icon"></i></span>
-          {{ menuItem.label }}
+          <span class="menuTitle">{{ menuItem.label }}</span>
           <span class="underline"></span>
         </a>
       </li>

@@ -9,6 +9,9 @@
     min-height: calc(100vh - 102.4px);
     .title {
       font-size: 2rem;
+      @media screen and (max-width: $tablet) {
+        font-size: 1.5rem;
+      }
       span {
         font-family: "Roboto Thin";
         line-height: 6rem;
@@ -25,12 +28,12 @@
         gap: 40px;
         justify-content: center;
         margin-bottom: 60px;
-
         img {
           height: 300px;
           width: 300px;
           border-radius: 22px;
         }
+
         .right {
           flex-basis: 50%;
           .projectName {
@@ -73,10 +76,31 @@
             }
           }
         }
+        @media screen and (max-width: $tablet) {
+          gap: 20px;
+
+          img {
+            height: 220px;
+            width: 220px;
+          }
+          .right {
+            .projectDescription {
+              font-size: 1.2rem;
+            }
+          }
+        }
+        @media screen and (max-width: $mobile) {
+          flex-direction: column;
+          align-items: center;
+        }
       }
 
       .odd {
         flex-direction: row-reverse;
+        @media screen and (max-width: $mobile) {
+          flex-direction: column;
+          align-items: center;
+        }
       }
     }
   }
